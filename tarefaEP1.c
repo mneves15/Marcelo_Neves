@@ -10,7 +10,7 @@ int main() {
     float min;
     float max;
 
-    printf("\nQuantos numeros na sua serie (N): ");
+    printf("\nQuantos numeros na sua serie (N):");
     scanf("%d", &num);
     
     vetor = malloc( num * sizeof(float));
