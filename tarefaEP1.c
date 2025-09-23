@@ -7,6 +7,7 @@ int main() {
 
     float soma=0;
     float *vetor;
+    float min, max;
 
     printf("\nQuantos numeros na sua serie (N): ");
     scanf("%d", &num);
@@ -21,7 +22,23 @@ int main() {
         printf("> ");
         scanf("%f", &vetor[i]);
         soma+=vetor[i];
+
+        if(i == 0) { 
+            // inicializa min e max com o primeiro valor
+            min = max = vetor[i];
+        } 
+        else {
+            if(vetor[i] < min) min = vetor[i];
+            if(vetor[i] > max) max = vetor[i];
+        }
     }
+
     printf("Media: %.2f\n", soma/num);
+    printf("Valor minimo: %.2f\n", min);
+    printf("Valor maximo: %.2f\n", max);
+
+    free(vetor); // libera a memória alocada
+
+    return 0;
 
 }
