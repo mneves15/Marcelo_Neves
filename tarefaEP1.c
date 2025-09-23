@@ -7,7 +7,8 @@ int main() {
 
     float soma=0;
     float *vetor;
-    float min, max;
+    float min;
+    float max;
 
     printf("\nQuantos numeros na sua serie (N): ");
     scanf("%d", &num);
