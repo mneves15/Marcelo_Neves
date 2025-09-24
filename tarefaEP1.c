@@ -18,8 +18,8 @@ int main() {
     float *vetor;
     float min;
     float max;
-    float mediana;
     float media;
+    float mediana;
     float desvio;
 
     printf("\nQuantos numeros na sua serie (N):");
