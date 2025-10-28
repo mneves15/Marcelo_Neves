@@ -1,6 +1,6 @@
 // Marcelo Nogueira Neves
 //
-// Implementa fila utilizando lista ligada
+// Implementa fila utilizando lista ligada - utiliza código que implementa pilhas
 
 
 #include <stdio.h>
